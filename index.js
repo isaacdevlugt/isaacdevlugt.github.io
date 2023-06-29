@@ -39,7 +39,7 @@ let data = {
       image: 'Megaphone.png',
       header: 'DID YOU KNOW THAT',
       description:
-        "The phrase 'quantum machine learning' first appeared on quant-ph in July 2013, with the paper Quantum algorithms for supervised and unsupervised machine learning.",
+        "The phrase 'quantum machine learning' first appeared on quant-ph in July 2013, with the paper 'Quantum algorithms for supervised and unsupervised machine learning.'",
       placement: 2020
     }
   },
