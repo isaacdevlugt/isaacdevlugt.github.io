@@ -165,7 +165,7 @@ let data = {
     }
   },
   'arxiv-NISQ': {
-    image: 'Paper_QAlgo.png',
+    image: 'paper.png',
     size: '100px',
     'base-rate': 12,
     unit: 'month',
@@ -242,6 +242,8 @@ function addBelt(category, categoryObj) {
 
   categoryBody.appendChild(categoryDescription);
 
+  factObj = categoryObj['fact'];
+  addFact(categoryBody, factObj);
   for (const year in categoryObj['annual']) {
     var yearObj = categoryObj['annual'][year];
     var belt = document.createElement('div');
@@ -278,9 +280,6 @@ function addBelt(category, categoryObj) {
     belt.appendChild(beltDescription);
     categoryBody.appendChild(belt);
   }
-
-  factObj = categoryObj['fact'];
-  addFact(categoryBody, factObj);
 }
 
 for (const category in data) {
