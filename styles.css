@@ -1,0 +1,73 @@
+/* GENERAL STYLES */
+* {
+  font-family: Quicksand !important;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 40pt;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 30pt;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 20pt;
+}
+
+p {
+  font-size: 20pt;
+}
+
+/* IMAGE SCROLL BELT */
+
+.belt {
+  overflow-x: hidden;
+}
+
+.belt-img {
+  display: flex;
+  animation-name: belt-scroll;
+  animation-duration: var(--speed);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: calc(100% + var(--size) + 5px);
+  background-image: var(--path);
+  background-repeat: repeat-x;
+  background-size: var(--size);
+  height: calc(var(--size) + 30px);
+}
+
+@keyframes belt-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(var(--size) * -1));
+  }
+}
+
+/* RANDOM FACT */
+
+.fact-header {
+  background-color: #d5f0fd;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  font-size: 20pt;
+}
+
+.fact-description {
+  font-weight: 100;
+  font-size: 16pt;
+}
+
+.fact-image {
+  width: 50px;
+  align-content: center;
+  border-radius: 50px;
+  vertical-align: middle;
+}
