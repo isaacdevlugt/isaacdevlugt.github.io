@@ -6,7 +6,8 @@ let data = {
     size: '100px',
     'base-rate': 12,
     unit: 'month',
-    description: 'How many papers that mention "QML" get published per month?',
+    description:
+      'How many papers that mention "quantum machine learning" get published per month?',
     annual: {
       2018: {
         amount: 46,
@@ -38,7 +39,7 @@ let data = {
       image: 'Megaphone.png',
       header: 'DID YOU KNOW THAT',
       description:
-        'PennyLane is a software package for simulating quantum circuits and more.',
+        "The phrase 'quantum machine learning' first appeared on quant-ph in July 2013, with the paper Quantum algorithms for supervised and unsupervised machine learning.",
       placement: 2020
     }
   },
@@ -79,8 +80,7 @@ let data = {
     fact: {
       image: 'Megaphone.png',
       header: 'DID YOU KNOW THAT',
-      description:
-        'PennyLane is a software package for simulating quantum circuits and more.',
+      description: 'Bread is love; bread is life 🍞',
       placement: 2020
     }
   },
@@ -120,8 +120,7 @@ let data = {
     fact: {
       image: 'Megaphone.png',
       header: 'DID YOU KNOW THAT',
-      description:
-        'PennyLane is a software package for simulating quantum circuits and more.',
+      description: 'The more bread you eat, the more bread you want to eat 🍞',
       placement: 2020
     }
   },
@@ -161,8 +160,7 @@ let data = {
     fact: {
       image: 'Megaphone.png',
       header: 'DID YOU KNOW THAT',
-      description:
-        'PennyLane is a software package for simulating quantum circuits and more.',
+      description: '8/10 people in Canada wish they ate more bread 🍞',
       placement: 2020
     }
   },
@@ -203,7 +201,7 @@ let data = {
       image: 'Megaphone.png',
       header: 'DID YOU KNOW THAT',
       description:
-        'PennyLane is a software package for simulating quantum circuits and more.',
+        "John Preskill originally proposed the name 'Messy Intermediate Length Quantum' to identify the epoch of quantum computing. It didn't stick.",
       placement: 2020
     }
   }
@@ -237,9 +235,6 @@ function addBelt(category, categoryObj) {
   } else if (category.includes('pennylane')) {
     categoryBody = document.getElementById('pennylane-body');
   }
-
-  factObj = categoryObj['fact'];
-  addFact(categoryBody, factObj);
 
   var categoryDescription = document.createElement('p');
   categoryDescription.setAttribute('class', 'category-desc');
@@ -283,6 +278,9 @@ function addBelt(category, categoryObj) {
     belt.appendChild(beltDescription);
     categoryBody.appendChild(belt);
   }
+
+  factObj = categoryObj['fact'];
+  addFact(categoryBody, factObj);
 }
 
 for (const category in data) {
