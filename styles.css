@@ -58,6 +58,10 @@ p {
   font-weight: bolder;
   flex-wrap: wrap;
   font-size: 20pt;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 40px;
 }
 
 .fact-description {
