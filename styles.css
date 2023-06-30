@@ -23,6 +23,10 @@ p {
   font-size: 20pt;
 }
 
+.header {
+  padding: 50px;
+}
+
 .intro {
   max-width: 900px;
   margin-left: auto;
