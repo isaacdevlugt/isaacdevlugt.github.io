@@ -236,6 +236,8 @@ function addBelt(category, categoryObj) {
     categoryBody = document.getElementById('pennylane-body');
   }
 
+  categoryBody.appendChild(document.createElement("hr"));
+
   var categoryDescription = document.createElement('p');
   categoryDescription.setAttribute('class', 'category-desc');
   categoryDescription.innerText = categoryObj['description'];
